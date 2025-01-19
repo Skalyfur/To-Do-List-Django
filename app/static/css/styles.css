@@ -1,0 +1,330 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro para todo el cuerpo */
+    color: #f0f0f0; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .home_container {
+    background-color: #1e1e1e; /* Contenedor más claro que el fondo */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada para un efecto dramático */
+    text-align: center;
+    width: 300px;
+  }
+
+  .home_container h1 {
+    font-size: 2rem;
+    color: #76c7c0; /* Un tono de azul verdoso para destacar */
+    margin-bottom: 1.5rem;
+  }
+
+  .home_container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .home_container li {
+    margin: 0.8rem 0;
+  }
+
+  .home_container a {
+    text-decoration: none;
+    color: #76c7c0; /* Azul verdoso para enlaces */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease; /* Animación sutil */
+  }
+
+  .home_container a:hover {
+    color: #4fb0a9; /* Un tono más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Ligeramente más grande al hacer hover */
+  }
+
+
+
+/* create list */
+
+.form_container {
+    background-color: #1e1e1e; /* Fondo más claro para el contenedor */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 400px;
+  }
+
+  .form_container h1 {
+    font-size: 2rem;
+    color: #76c7c0; /* Azul verdoso */
+    margin-bottom: 1.5rem;
+  }
+
+  .form_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form_container label {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .form_container input {
+    background-color: #2b2b2b; /* Fondo oscuro para los inputs */
+    color: #f0f0f0;
+    border: 1px solid #76c7c0;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+
+  .form_container textarea{
+    background-color: #2b2b2b; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto claro */
+    border: 1px solid #76c7c0; /* Borde azul verdoso */
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    height: 150px; /* Altura predeterminada */
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif; /* Asegura consistencia en la fuente */
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .form_container input:focus {
+    outline: none;
+    border-color: #4fb0a9; /* Cambia de color al enfocarse */
+    box-shadow: 0 0 4px #4fb0a9;
+  }
+
+  .form_container button {
+    background-color: #76c7c0; /* Botón azul verdoso */
+    color: #121212; /* Texto oscuro */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  .form_container button:hover {
+    background-color: #4fb0a9; /* Color más oscuro al pasar el ratón */
+  }
+
+  .form_container li {
+    margin-top: 1.5rem;
+    list-style: none;
+  }
+
+  .form_container a {
+    text-decoration: none;
+    color: #76c7c0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .form_container a:hover {
+    color: #4fb0a9;
+  }
+
+
+
+/* task list  */
+.tasks_container {
+    background-color: #1e1e1e; /* Fondo más claro para el contenedor */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .tasks_container h1 {
+    font-size: 2rem;
+    color: #76c7c0; /* Azul verdoso */
+    margin-bottom: 1.5rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #2b2b2b; /* Borde oscuro */
+  }
+
+  th {
+    background-color: #2b2b2b; /* Fondo más oscuro para encabezados */
+    color: #f0f0f0; /* Texto claro */
+    font-weight: bold;
+  }
+
+  td {
+    background-color: #252525; /* Fondo de celdas */
+    color: #dcdcdc; /* Texto más claro */
+  }
+
+  tr:nth-child(even) td {
+    background-color: #2b2b2b; /* Alternancia de colores para filas */
+  }
+
+  .empty_row {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+  }
+
+  a {
+    text-decoration: none;
+    color: #76c7c0; /* Azul verdoso */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #4fb0a9; /* Azul más oscuro al pasar el ratón */
+  }
+
+  .tasks_container li {
+    list-style: none;
+    margin-top: 1.5rem;
+  }
+
+
+/* update list */
+.update_container {
+    background-color: #1e1e1e; /* Fondo más claro para el contenedor */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 400px;
+  }
+
+  .update_container h1 {
+    font-size: 2rem;
+    color: #76c7c0; /* Azul verdoso */
+    margin-bottom: 1.5rem;
+  }
+
+  .update_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .update_container label {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .update_container input[type="text"],
+  .update_container input[type="date"] {
+    background-color: #2b2b2b; /* Fondo oscuro para los inputs */
+    color: #f0f0f0;
+    border: 1px solid #76c7c0;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+
+  .update_container input[type="checkbox"] {
+    margin-left: 0.5rem;
+    transform: scale(1.2); /* Agranda el checkbox */
+  }
+
+  .update_container input:focus {
+    outline: none;
+    border-color: #4fb0a9; /* Cambia de color al enfocarse */
+    box-shadow: 0 0 4px #4fb0a9;
+  }
+
+  .update_container textarea{
+    background-color: #2b2b2b; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto claro */
+    border: 1px solid #76c7c0; /* Borde azul verdoso */
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    height: 150px; /* Altura predeterminada */
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif; /* Asegura consistencia en la fuente */
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .update_container button {
+    background-color: #76c7c0; /* Botón azul verdoso */
+    color: #121212; /* Texto oscuro */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  .update_container button:hover {
+    background-color: #4fb0a9; /* Color más oscuro al pasar el ratón */
+  }
+
+  .update_container li {
+    list-style: none;
+    margin-top: 1.5rem;
+  }
+
+  .update_container a {
+    text-decoration: none;
+    color: #76c7c0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .update_container a:hover {
+    color: #4fb0a9;
+  }
